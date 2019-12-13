@@ -2,7 +2,7 @@
 <TriggernometryExport Version="1">
   <ExportedFolder FFXIVJobFilterEnabled="false" FFXIVJobFilter="0" ZoneFilterEnabled="false" EventFilterEnabled="false" Id="f695fb6d-6a4d-4682-9eba-ffb274909bd0" Name="4.0" Enabled="true">
     <Folders>
-      <Folder FFXIVJobFilterEnabled="false" FFXIVJobFilter="0" ZoneFilterEnabled="false" EventFilterEnabled="false" Id="06770028-6b3e-4c59-b003-16ccf7de6aca" Name="极青龙" Enabled="true">
+      <Folder FFXIVJobFilterEnabled="false" FFXIVJobFilter="0" ZoneFilterEnabled="true" EventFilterEnabled="false" Id="06770028-6b3e-4c59-b003-16ccf7de6aca" ZoneFilterRegularExpression="青龙诗魂战" Name="极青龙" Enabled="true">
         <Folders />
         <Triggers>
           <Trigger Enabled="true" Source="Log" Name="石肤" Id="821be2ba-fc6b-4e7b-9995-f0011631a418" RegularExpression="沼之式鬼 starts using 石肤 on 沼之式鬼" DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="0">
@@ -152,7 +152,7 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder FFXIVJobFilterEnabled="false" FFXIVJobFilter="0" ZoneFilterEnabled="false" EventFilterEnabled="false" Id="fb86471e-222d-4070-a4a0-6eb2a107c789" Name="极神龙" Enabled="true">
+      <Folder FFXIVJobFilterEnabled="false" FFXIVJobFilter="0" ZoneFilterEnabled="true" EventFilterEnabled="false" Id="fb86471e-222d-4070-a4a0-6eb2a107c789" ZoneFilterRegularExpression="神龙梦幻歼灭战" Name="极神龙" Enabled="true">
         <Folders />
         <Triggers>
           <Trigger Enabled="true" Source="Log" Name="P1闪电" Id="4eba4901-8ecb-4efd-9b29-d56c8ff6908d" RegularExpression="00:282b:右翼正在发动“闪电”" DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="0">
@@ -284,7 +284,7 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder FFXIVJobFilterEnabled="false" FFXIVJobFilter="0" ZoneFilterEnabled="false" EventFilterEnabled="false" Id="8cc389da-868c-41eb-8d36-3eb3c44b0c4c" Name="极月读" Enabled="true">
+      <Folder FFXIVJobFilterEnabled="false" FFXIVJobFilter="0" ZoneFilterEnabled="true" EventFilterEnabled="false" Id="8cc389da-868c-41eb-8d36-3eb3c44b0c4c" ZoneFilterRegularExpression="月读幽夜歼灭战" Name="极月读" Enabled="true">
         <Folders />
         <Triggers>
           <Trigger Enabled="true" Source="Log" Name="铳分摊" Id="adbcbfde-1406-409c-8f3c-2e71d58d5d10" RegularExpression="14:2BBC:月读 starts using 深宵换装" DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="0">
@@ -432,7 +432,9 @@
                 <Conditions />
               </Action>
             </Actions>
-            <Condition Enabled="false" Grouping="Or" />
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${RoleName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+            </Condition>
             <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="Log" Name="白色四层" Id="534acd3a-bd52-4988-843d-0b1aeedb9416" RegularExpression=":(?&lt;RoleName&gt;[^.]*) gains the effect of 满月下" DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="3">
@@ -456,12 +458,14 @@
                 <Conditions />
               </Action>
             </Actions>
-            <Condition Enabled="false" Grouping="Or" />
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${RoleName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+            </Condition>
             <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder FFXIVJobFilterEnabled="false" FFXIVJobFilter="0" ZoneFilterEnabled="false" EventFilterEnabled="false" Id="4a38a522-eca9-4c7e-b4b0-a03299331851" Name="极猫男" Enabled="true">
+      <Folder FFXIVJobFilterEnabled="false" FFXIVJobFilter="0" ZoneFilterEnabled="true" EventFilterEnabled="false" Id="4a38a522-eca9-4c7e-b4b0-a03299331851" ZoneFilterRegularExpression="白虎诗魂战" Name="极猫男" Enabled="true">
         <Folders />
         <Triggers>
           <Trigger Enabled="true" Source="Log" Name="死刑" Id="f52567da-f52a-437f-81e9-6a267c575761" RegularExpression="14:27DA:白虎 starts using 天雷掌 on (.*)" DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="0">
@@ -511,7 +515,9 @@
                 <Conditions />
               </Action>
             </Actions>
-            <Condition Enabled="false" Grouping="Or" />
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${RoleName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+            </Condition>
             <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="Log" Name="妖风" Id="6b7ff4c1-6960-49c2-8851-10d745c900c0" RegularExpression="1A:(.*):(?&lt;RoleName&gt;[^.]*) gains the effect of 妖风" DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="0">
@@ -521,7 +527,9 @@
                 <Conditions />
               </Action>
             </Actions>
-            <Condition Enabled="false" Grouping="Or" />
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${RoleName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+            </Condition>
             <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="Log" Name="大圈" Id="f0fff4d5-eb55-4016-a830-45eb91615c91" RegularExpression="1B:(.*):(?&lt;RoleName&gt;[^.]*):....:....:0004:0000:0000:0000:" DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="0">
@@ -531,12 +539,14 @@
                 <Conditions />
               </Action>
             </Actions>
-            <Condition Enabled="false" Grouping="Or" />
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${RoleName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="NumericEqual" />
+            </Condition>
             <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder FFXIVJobFilterEnabled="false" FFXIVJobFilter="0" ZoneFilterEnabled="false" EventFilterEnabled="false" Id="53f977de-898b-4c69-9b78-1778a10cd73f" Name="朱雀炒光呆" Enabled="true">
+      <Folder FFXIVJobFilterEnabled="false" FFXIVJobFilter="0" ZoneFilterEnabled="true" EventFilterEnabled="false" Id="53f977de-898b-4c69-9b78-1778a10cd73f" ZoneFilterRegularExpression="朱雀诗魂战" Name="朱雀炒光呆" Enabled="true">
         <Folders />
         <Triggers>
           <Trigger Enabled="true" Source="Log" Name="死刑" Id="66347788-9507-4c84-b370-e269bf129ced" RegularExpression="14:32D1:朱雀 starts using 赤热击 on (.*)" DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="0">
@@ -581,7 +591,7 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder FFXIVJobFilterEnabled="false" FFXIVJobFilter="0" ZoneFilterEnabled="false" EventFilterEnabled="false" Id="664806de-39a9-42de-8854-9b9d9495cd32" Name="极JK" Enabled="true">
+      <Folder FFXIVJobFilterEnabled="false" FFXIVJobFilter="0" ZoneFilterEnabled="true" EventFilterEnabled="false" Id="664806de-39a9-42de-8854-9b9d9495cd32" ZoneFilterRegularExpression="吉祥天女歼殛战" Name="极JK" Enabled="true">
         <Folders />
         <Triggers>
           <Trigger Enabled="true" Source="Log" Name="完全拒绝" Id="136b8a29-b9ec-4a83-bf3b-5b9416bd6a3f" RegularExpression="14:2149:吉祥天女 starts using 完全拒绝 on 吉祥天女." DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="0">
@@ -604,14 +614,16 @@
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Source="Log" Name="奶点名" Id="f24b9b9a-b1dc-4902-a5d3-7bc446512ef1" RegularExpression="1B:102EA04B:(?&lt;RoleName&gt;[^.]*):0000:0000:006D:0000:0000:0000:" DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="0">
+          <Trigger Enabled="true" Source="Log" Name="奶点名" Id="f24b9b9a-b1dc-4902-a5d3-7bc446512ef1" RegularExpression="1B:(.*):(?&lt;RoleName&gt;[^.]*):0000:0000:006D:0000:0000:0000:" DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="0">
             <Actions>
               <Action OrderNumber="1" AuraImageMode="Normal" TextAuraAlignment="MiddleCenter" TextAuraFontSize="9" TextAuraEffect="None" ActionType="UseTTS" ExecutionDelayExpression="0" DebugLevel="Inherit" SystemBeepFreqExpression="1000" SystemBeepLengthExpression="100" PlaySoundVolumeExpression="100" UseTTSTextExpression="奶点名" UseTTSVolumeExpression="100" UseTTSRateExpression="0" LaunchProcessWindowStyle="Normal" ExecScriptType="CSharp" MessageBoxIconType="None" VariableOp="Unset" ListVariableOp="Unset" ListVariableExpressionType="String" TriggerOp="FireTrigger" TriggerForce="" TriggerId="00000000-0000-0000-0000-000000000000" FolderOp="EnableFolder" FolderId="00000000-0000-0000-0000-000000000000" AuraOp="ActivateAura" TextAuraOp="ActivateAura" TextAuraFontName="宋体" TextAuraForeground="Black" TextAuraBackground="Transparent" TextAuraOutline="White" OBSControlType="StartStreaming" KeypressType="SendKeys">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
             </Actions>
-            <Condition Enabled="false" Grouping="Or" />
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${RoleName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+            </Condition>
             <Conditions />
           </Trigger>
           <Trigger Enabled="true" Source="Log" Name="二仇炮" Id="b444b3ef-97b7-409e-95dc-95a594bea60d" RegularExpression=":(?&lt;RoleName&gt;[^.]*):0000:0000:003E:0000:0000:0000:" DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="0">
@@ -624,9 +636,19 @@
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Trigger>
+          <Trigger Enabled="true" Source="Log" Name="分摊" Id="bef5af89-0df8-4649-9f36-30db7a38004a" RegularExpression="1B:(.*):(.*):....:....:003E:0000:0000:0000:" DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="0">
+            <Actions>
+              <Action OrderNumber="1" AuraImageMode="Normal" TextAuraAlignment="MiddleCenter" TextAuraFontSize="9" TextAuraEffect="None" ActionType="UseTTS" ExecutionDelayExpression="0" DebugLevel="Inherit" SystemBeepFreqExpression="1000" SystemBeepLengthExpression="100" PlaySoundVolumeExpression="100" UseTTSTextExpression="分摊分摊" UseTTSVolumeExpression="100" UseTTSRateExpression="0" LaunchProcessWindowStyle="Normal" ExecScriptType="CSharp" MessageBoxIconType="None" VariableOp="Unset" ListVariableOp="Unset" ListVariableExpressionType="String" TriggerOp="FireTrigger" TriggerForce="" TriggerId="00000000-0000-0000-0000-000000000000" FolderOp="EnableFolder" FolderId="00000000-0000-0000-0000-000000000000" AuraOp="ActivateAura" TextAuraOp="ActivateAura" TextAuraFontName="宋体" TextAuraForeground="Black" TextAuraBackground="Transparent" TextAuraOutline="White" OBSControlType="StartStreaming" KeypressType="SendKeys">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
         </Triggers>
       </Folder>
-      <Folder FFXIVJobFilterEnabled="false" FFXIVJobFilter="0" ZoneFilterEnabled="false" EventFilterEnabled="false" Id="62db3646-7b24-426b-8ee3-06faeb3e7226" Name="火龙" Enabled="true">
+      <Folder FFXIVJobFilterEnabled="false" FFXIVJobFilter="0" ZoneFilterEnabled="true" EventFilterEnabled="false" Id="62db3646-7b24-426b-8ee3-06faeb3e7226" ZoneFilterRegularExpression="火龙上位狩猎战" Name="火龙" Enabled="true">
         <Folders />
         <Triggers>
           <Trigger Enabled="true" Source="Log" Name="龙颚" Id="ffd675c0-77da-45d8-a767-3c8b6817c5ec" RegularExpression="14:2853:火龙 starts using 龙颚 on 火龙." DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="0">
