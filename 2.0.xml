@@ -103,16 +103,18 @@
       <Folder FFXIVJobFilterEnabled="false" FFXIVJobFilter="0" ZoneFilterEnabled="true" EventFilterEnabled="false" Id="b3761544-331c-4cff-bbad-6c60126a2556" ZoneFilterRegularExpression="伊弗利特歼殛战" Name="极火神" Enabled="true">
         <Folders />
         <Triggers>
-          <Trigger Enabled="true" Source="Log" Name="柱子" Id="f0320922-5580-4547-82f0-11c65657db49" RegularExpression="54F:伊弗利特 starts using 光辉炎柱 on (.*)." DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="1500">
+          <Trigger Enabled="true" Source="Log" Name="柱子" Id="f0320922-5580-4547-82f0-11c65657db49" RegularExpression="54F:伊弗利特 starts using 光辉炎柱 on (.*)." DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Deny" RefirePeriodExpression="1500">
             <Actions>
               <Action OrderNumber="1" AuraImageMode="Normal" TextAuraAlignment="MiddleCenter" TextAuraFontSize="9" TextAuraEffect="None" ActionType="UseTTS" ExecutionDelayExpression="0" DebugLevel="Inherit" SystemBeepFreqExpression="1000" SystemBeepLengthExpression="100" PlaySoundVolumeExpression="100" UseTTSTextExpression="火柱快跑" UseTTSVolumeExpression="100" UseTTSRateExpression="0" LaunchProcessWindowStyle="Normal" ExecScriptType="CSharp" MessageBoxIconType="None" VariableOp="Unset" ListVariableOp="Unset" ListVariableExpressionType="String" TriggerOp="FireTrigger" TriggerForce="" TriggerId="00000000-0000-0000-0000-000000000000" FolderOp="EnableFolder" FolderId="00000000-0000-0000-0000-000000000000" AuraOp="ActivateAura" TextAuraOp="ActivateAura" TextAuraFontName="宋体" TextAuraForeground="Black" TextAuraBackground="Transparent" TextAuraOutline="White" OBSControlType="StartStreaming" KeypressType="SendKeys">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
             </Actions>
-            <Condition Enabled="false" Grouping="Or" />
+            <Condition Enabled="false" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionTypeL="String" ExpressionTypeR="String" ConditionType="NumericEqual" />
+            </Condition>
           </Trigger>
-          <Trigger Enabled="true" Source="Log" Name="火针" Id="74ce87e1-d90c-48f0-94af-66446996250c" RegularExpression="Added new combatant 火狱之楔." DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="1500">
+          <Trigger Enabled="true" Source="Log" Name="火针" Id="74ce87e1-d90c-48f0-94af-66446996250c" RegularExpression="Added new combatant 火狱之楔." DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Deny" RefirePeriodExpression="3000">
             <Actions>
               <Action OrderNumber="1" AuraImageMode="Normal" TextAuraAlignment="MiddleCenter" TextAuraFontSize="9" TextAuraEffect="None" ActionType="UseTTS" ExecutionDelayExpression="0" DebugLevel="Inherit" SystemBeepFreqExpression="1000" SystemBeepLengthExpression="100" PlaySoundVolumeExpression="100" UseTTSTextExpression="注意转火" UseTTSVolumeExpression="100" UseTTSRateExpression="0" LaunchProcessWindowStyle="Normal" ExecScriptType="CSharp" MessageBoxIconType="None" VariableOp="Unset" ListVariableOp="Unset" ListVariableExpressionType="String" TriggerOp="FireTrigger" TriggerForce="" TriggerId="00000000-0000-0000-0000-000000000000" FolderOp="EnableFolder" FolderId="00000000-0000-0000-0000-000000000000" AuraOp="ActivateAura" TextAuraOp="ActivateAura" TextAuraFontName="宋体" TextAuraForeground="Black" TextAuraBackground="Transparent" TextAuraOutline="White" OBSControlType="StartStreaming" KeypressType="SendKeys">
                 <Condition Enabled="false" Grouping="Or" />
@@ -133,7 +135,7 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Source="Log" Name="锁链" Id="d95ea628-e1c5-44aa-bf5d-776145ae2cb4" RegularExpression="1A:........:(?&lt;RoleName&gt;[^.]*) gains the effect of 火狱之锁" DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="500">
+          <Trigger Enabled="true" Source="Log" Name="锁链" Id="d95ea628-e1c5-44aa-bf5d-776145ae2cb4" RegularExpression="1A:........:(?&lt;RoleName&gt;[^.]*) gains the effect of 火狱之锁" DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="1500">
             <Actions>
               <Action OrderNumber="1" AuraImageMode="Normal" TextAuraAlignment="MiddleCenter" TextAuraFontSize="9" TextAuraEffect="None" ActionType="UseTTS" ExecutionDelayExpression="0" DebugLevel="Inherit" SystemBeepFreqExpression="1000" SystemBeepLengthExpression="100" PlaySoundVolumeExpression="100" UseTTSTextExpression="注意锁链" UseTTSVolumeExpression="100" UseTTSRateExpression="0" LaunchProcessWindowStyle="Normal" ExecScriptType="CSharp" MessageBoxIconType="None" VariableOp="Unset" ListVariableOp="Unset" ListVariableExpressionType="String" TriggerOp="FireTrigger" TriggerForce="" TriggerId="00000000-0000-0000-0000-000000000000" FolderOp="EnableFolder" FolderId="00000000-0000-0000-0000-000000000000" AuraOp="ActivateAura" TextAuraOp="ActivateAura" TextAuraFontName="宋体" TextAuraForeground="Black" TextAuraBackground="Transparent" TextAuraOutline="White" OBSControlType="StartStreaming" KeypressType="SendKeys">
                 <Condition Enabled="false" Grouping="Or" />
@@ -144,14 +146,15 @@
               <ConditionSingle Enabled="true" ExpressionL="${RoleName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
             </Condition>
           </Trigger>
-          <Trigger Enabled="true" Source="Log" Name="热风buff" Id="a48a44eb-87c3-41d0-a0eb-0249f9f8ecb2" RegularExpression="1A:(?&lt;RoleName&gt;[^.]*) gains the effect of 灼热 from (.*) for 20.00 Seconds." DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="0">
+          <Trigger Enabled="true" Source="Log" Name="热风buff" Id="a48a44eb-87c3-41d0-a0eb-0249f9f8ecb2" RegularExpression="1A:(.*):(?&lt;RoleName&gt;[^.]*) gains the effect of 灼热 from" DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="0">
             <Actions>
               <Action OrderNumber="1" AuraImageMode="Normal" TextAuraAlignment="MiddleCenter" TextAuraFontSize="9" TextAuraEffect="None" ActionType="UseTTS" ExecutionDelayExpression="0" DebugLevel="Inherit" SystemBeepFreqExpression="1000" SystemBeepLengthExpression="100" PlaySoundVolumeExpression="100" UseTTSTextExpression="热风出人群" UseTTSVolumeExpression="100" UseTTSRateExpression="0" LaunchProcessWindowStyle="Normal" ExecScriptType="CSharp" MessageBoxIconType="None" VariableOp="Unset" ListVariableOp="Unset" ListVariableExpressionType="String" TriggerOp="FireTrigger" TriggerForce="" TriggerId="00000000-0000-0000-0000-000000000000" FolderOp="EnableFolder" FolderId="00000000-0000-0000-0000-000000000000" AuraOp="ActivateAura" TextAuraOp="ActivateAura" TextAuraFontName="宋体" TextAuraForeground="Black" TextAuraBackground="Transparent" TextAuraOutline="White" OBSControlType="StartStreaming" KeypressType="SendKeys">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="Or">
-              <ConditionSingle Enabled="true" ExpressionL="${RoleName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="NumericEqual" />
+              <ConditionSingle Enabled="true" ExpressionL="${RoleName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
             </Condition>
           </Trigger>
         </Triggers>
@@ -159,18 +162,20 @@
       <Folder FFXIVJobFilterEnabled="false" FFXIVJobFilter="0" ZoneFilterEnabled="true" EventFilterEnabled="false" Id="ebad5ad4-c79d-4edc-9f53-11304b3c6714" ZoneFilterRegularExpression="泰坦歼殛战" Name="蒋婷婷" Enabled="true">
         <Folders />
         <Triggers>
-          <Trigger Enabled="true" Source="Log" Name="石牢" Id="e90a908f-7267-420b-8f30-3683d72cba4e" RegularExpression="(5C5|282b):(.*) starts using 花岗岩坟墓 on (.*)." DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="500">
+          <Trigger Enabled="true" Source="Log" Name="石牢" Id="e90a908f-7267-420b-8f30-3683d72cba4e" RegularExpression="(5C5|282b):(.*) starts using 花岗岩坟墓 on (.*)." DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Deny" RefirePeriodExpression="500">
             <Actions>
               <Action OrderNumber="1" AuraImageMode="Normal" TextAuraAlignment="MiddleCenter" TextAuraFontSize="9" TextAuraEffect="None" ActionType="UseTTS" ExecutionDelayExpression="0" DebugLevel="Inherit" SystemBeepFreqExpression="1000" SystemBeepLengthExpression="100" PlaySoundVolumeExpression="100" UseTTSTextExpression="石牢转火" UseTTSVolumeExpression="100" UseTTSRateExpression="0" LaunchProcessWindowStyle="Normal" ExecScriptType="CSharp" MessageBoxIconType="None" VariableOp="Unset" ListVariableOp="Unset" ListVariableExpressionType="String" TriggerOp="FireTrigger" TriggerForce="" TriggerId="00000000-0000-0000-0000-000000000000" FolderOp="EnableFolder" FolderId="00000000-0000-0000-0000-000000000000" AuraOp="ActivateAura" TextAuraOp="ActivateAura" TextAuraFontName="宋体" TextAuraForeground="Black" TextAuraBackground="Transparent" TextAuraOutline="White" OBSControlType="StartStreaming" KeypressType="SendKeys">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
               <Action OrderNumber="2" AuraImageMode="Normal" TextAuraAlignment="MiddleCenter" TextAuraFontSize="9" TextAuraEffect="None" ActionType="UseTTS" ExecutionDelayExpression="5000" DebugLevel="Inherit" SystemBeepFreqExpression="1000" SystemBeepLengthExpression="100" PlaySoundVolumeExpression="100" UseTTSTextExpression="注意停手" UseTTSVolumeExpression="100" UseTTSRateExpression="0" LaunchProcessWindowStyle="Normal" ExecScriptType="CSharp" MessageBoxIconType="None" VariableOp="Unset" ListVariableOp="Unset" ListVariableExpressionType="String" TriggerOp="FireTrigger" TriggerForce="" TriggerId="00000000-0000-0000-0000-000000000000" FolderOp="EnableFolder" FolderId="00000000-0000-0000-0000-000000000000" AuraOp="ActivateAura" TextAuraOp="ActivateAura" TextAuraFontName="宋体" TextAuraForeground="Black" TextAuraBackground="Transparent" TextAuraOutline="White" OBSControlType="StartStreaming" KeypressType="SendKeys">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Source="Log" Name="流沙" Id="11489402-03ed-4b57-b78d-fb08bb7c8ffa" RegularExpression="(5BE|5BD):(.*) starts using 大地之重 on (.*)." DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="1500">
+          <Trigger Enabled="true" Source="Log" Name="流沙" Id="11489402-03ed-4b57-b78d-fb08bb7c8ffa" RegularExpression="(5BE|5BD):(.*) starts using 大地之重 on (.*)." DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Deny" RefirePeriodExpression="1500">
             <Actions>
               <Action OrderNumber="1" AuraImageMode="Normal" TextAuraAlignment="MiddleCenter" TextAuraFontSize="9" TextAuraEffect="None" ActionType="UseTTS" ExecutionDelayExpression="0" DebugLevel="Inherit" SystemBeepFreqExpression="1000" SystemBeepLengthExpression="100" PlaySoundVolumeExpression="100" UseTTSTextExpression="流沙快跑" UseTTSVolumeExpression="100" UseTTSRateExpression="0" LaunchProcessWindowStyle="Normal" ExecScriptType="CSharp" MessageBoxIconType="None" VariableOp="Unset" ListVariableOp="Unset" ListVariableExpressionType="String" TriggerOp="FireTrigger" TriggerForce="" TriggerId="00000000-0000-0000-0000-000000000000" FolderOp="EnableFolder" FolderId="00000000-0000-0000-0000-000000000000" AuraOp="ActivateAura" TextAuraOp="ActivateAura" TextAuraFontName="宋体" TextAuraForeground="Black" TextAuraBackground="Transparent" TextAuraOutline="White" OBSControlType="StartStreaming" KeypressType="SendKeys">
                 <Condition Enabled="false" Grouping="Or" />
@@ -179,7 +184,7 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Source="Log" Name="冲拳" Id="55d9d778-28f8-43f3-b2ae-757eee8c2ff2" RegularExpression="(5BC|5BB):(.*) starts using 地裂 on (.*)." DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Allow" RefirePeriodExpression="1500">
+          <Trigger Enabled="true" Source="Log" Name="冲拳" Id="55d9d778-28f8-43f3-b2ae-757eee8c2ff2" RegularExpression="(5BC|5BB):(.*) starts using 地裂 on (.*)." DebugLevel="Inherit" PrevActions="Keep" PrevActionsRefire="Allow" Scheduling="FromFire" PeriodRefire="Deny" RefirePeriodExpression="1500">
             <Actions>
               <Action OrderNumber="1" AuraImageMode="Normal" TextAuraAlignment="MiddleCenter" TextAuraFontSize="9" TextAuraEffect="None" ActionType="UseTTS" ExecutionDelayExpression="0" DebugLevel="Inherit" SystemBeepFreqExpression="1000" SystemBeepLengthExpression="100" PlaySoundVolumeExpression="100" UseTTSTextExpression="冲拳冲拳" UseTTSVolumeExpression="100" UseTTSRateExpression="+1" LaunchProcessWindowStyle="Normal" ExecScriptType="CSharp" MessageBoxIconType="None" VariableOp="Unset" ListVariableOp="Unset" ListVariableExpressionType="String" TriggerOp="FireTrigger" TriggerForce="" TriggerId="00000000-0000-0000-0000-000000000000" FolderOp="EnableFolder" FolderId="00000000-0000-0000-0000-000000000000" AuraOp="ActivateAura" TextAuraOp="ActivateAura" TextAuraFontName="宋体" TextAuraForeground="Black" TextAuraBackground="Transparent" TextAuraOutline="White" OBSControlType="StartStreaming" KeypressType="SendKeys">
                 <Condition Enabled="false" Grouping="Or" />
