@@ -17,6 +17,11 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="减伤换t" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 换T&lt;se.1&gt;" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -25,6 +30,11 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="双t接线" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 双t接线 &lt;se.1&gt;" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -71,6 +81,11 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="钢铁后月环" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 先钢铁后月环" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -79,6 +94,11 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="月环后钢铁" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 月环钢铁" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -114,6 +134,11 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="去右半场" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 右安全" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -122,6 +147,11 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="去左半场" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 左安全" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -130,6 +160,11 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="双奶分摊" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 1 2 分摊" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -454,6 +489,11 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="月环注意靠近" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 靠近 月环" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -462,6 +502,11 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="准备抓人" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 猫男抓人 注意二仇" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -470,6 +515,11 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="大圈" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p &lt;1&gt;  -&gt; 放大圈" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="Or">
@@ -480,6 +530,11 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="泡泡" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 泡泡 -&gt; &lt;1&gt; 远离" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="Or">
@@ -490,6 +545,11 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="黑泥" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 黑泥 --&gt; &lt;1&gt;" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="Or">
@@ -500,6 +560,11 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="靠近" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 靠近" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -513,6 +578,7 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="死刑" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -521,6 +587,11 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="醒夫十八踢" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 换T死刑!" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -529,6 +600,11 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="远离 远离" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 远离远离" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -537,6 +613,11 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="靠近 靠近" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 靠近" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -550,6 +631,11 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="元气击退" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 击退 吃元气" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -558,14 +644,20 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="元气吸引" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 吸引 吃元气" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Name="奶点名" Id="f24b9b9a-b1dc-4902-a5d3-7bc446512ef1" RegularExpression="1B:(.*):(?&lt;RoleName&gt;[^.]*):0000:0000:006D:0000:0000:0000:">
+          <Trigger Enabled="true" Name="奶点名" Id="f24b9b9a-b1dc-4902-a5d3-7bc446512ef1" RegularExpression="1B:(.*):(?&lt;RoleName&gt;[^.]*):....:....:006D:0000:0000:0000:">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="奶点名" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="Or">
@@ -576,6 +668,11 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="注意二仇炮" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 当心二仇炮" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
