@@ -5,7 +5,7 @@
       <Folder ZoneFilterEnabled="True" Id="f1804d87-d4b4-4b50-a6e6-b13e7670e2c4" ZoneFilterRegularExpression="希瓦歼殛战" Name="极冰神" Enabled="true">
         <Folders />
         <Triggers>
-          <Trigger Enabled="true" Name="冰河怒击" Id="dadc3e3c-b1b1-4d4c-84bb-2d1ae216e69a" RegularExpression="(.*)正在发动“冰河怒击”">
+          <Trigger Enabled="true" Name="冰河怒击" Id="dadc3e3c-b1b1-4d4c-84bb-2d1ae216e69a" RegularExpression="14:BE9:(.*) starts using 冰河怒击 on (.*)">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="穿背穿背" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
@@ -41,7 +41,7 @@
               <ConditionSingle Enabled="true" ExpressionL="${RoleName}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
             </Condition>
           </Trigger>
-          <Trigger Enabled="true" Name="剑形态" Id="e82942a8-ea3f-4395-aee3-8d11b468ec3b" RegularExpression="282b:(.*)发动了“冰霜之剑”">
+          <Trigger Enabled="true" Name="剑形态" Id="e82942a8-ea3f-4395-aee3-8d11b468ec3b" RegularExpression="15:........:(.*):993:冰霜之剑:........:(.*):">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="冰印剑分摊" UseTTSRateExpression="+1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
@@ -49,7 +49,7 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Name="弓形态" Id="cda2489a-07ec-48e8-ab6d-34dd3c68841f" RegularExpression="282b:(.*)发动了“冰霜之弓”">
+          <Trigger Enabled="true" Name="弓形态" Id="cda2489a-07ec-48e8-ab6d-34dd3c68841f" RegularExpression="15:........:(.*):BDD:冰霜之弓:........:(.*):">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="去背后" UseTTSRateExpression="+1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
