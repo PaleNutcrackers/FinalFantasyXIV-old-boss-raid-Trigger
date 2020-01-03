@@ -484,7 +484,7 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder Id="fae07919-a340-46b3-85d3-7f6a4bf1f160" ZoneFilterRegularExpression="俾斯麦歼殛战" Name="极云" Enabled="true">
+      <Folder ZoneFilterEnabled="True" Id="fae07919-a340-46b3-85d3-7f6a4bf1f160" ZoneFilterRegularExpression="俾斯麦歼殛战" Name="极云" Enabled="true">
         <Folders />
         <Triggers>
           <Trigger Enabled="true" Name="风buff" Id="f8c1d6e9-3c72-4abc-ab2a-d2c1c8556efd" RegularExpression="1A:(.*):(?&lt;RoleName&gt;[^.]*) gains the effect of 支配于风">
