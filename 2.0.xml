@@ -9,11 +9,9 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="穿背穿背" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 远离正面" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -40,11 +38,9 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="快分散" UseTTSRateExpression="+1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 杖形态分散" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="Or">
@@ -55,11 +51,9 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="冰印剑分摊" UseTTSRateExpression="+1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 冰印剑分摊!" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -68,11 +62,9 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="去背后" UseTTSRateExpression="+1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 弓形态 270AOE" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -82,31 +74,47 @@
       <Folder ZoneFilterEnabled="True" Id="3576bdb0-3ba8-42df-a07f-bee43373b08b" ZoneFilterRegularExpression="迦楼罗歼殛战" Name="极风神" Enabled="true">
         <Folders />
         <Triggers>
-          <Trigger Enabled="true" Name="寒风之歌" Id="e4d2554e-92e1-4224-a02e-3d6b5163e51a" RegularExpression="00:282b:(.*)正在发动“寒风之歌”">
+          <Trigger Enabled="true" Name="上天" Id="e4d2554e-92e1-4224-a02e-3d6b5163e51a" RegularExpression="14:6E1:(迦楼罗|Garuda|ガルーダ) starts using">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="快找掩体" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="false" Name="小怪" Id="c8292d24-145e-4e04-a0a4-353226d8bacc" RegularExpression="Added new combatant (妙翅|美翼)." PeriodRefire="Deny" RefirePeriodExpression="500">
+          <Trigger Enabled="false" Name="小怪" Id="c8292d24-145e-4e04-a0a4-353226d8bacc" RegularExpression="] 03:4000B5[EF][78]:Added new combatant (美翼|妙翅).  Job: N/A Level: 50" PeriodRefire="Deny" RefirePeriodExpression="500">
             <Actions>
-              <Action OrderNumber="1" UseTTSTextExpression="小怪出现 st挑衅" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
-                <Condition Enabled="false" Grouping="Or" />
+              <Action OrderNumber="1" UseTTSTextExpression="ST绿线妙翅,MT红线美翼" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="Tank" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
                 <Conditions />
               </Action>
               <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 小怪注意挑衅" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
+              <Action OrderNumber="3" UseTTSTextExpression="注意MT血量" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="Healer" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+                <Conditions />
+              </Action>
+              <Action OrderNumber="4" UseTTSTextExpression="集火绿线妙翅" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+                <Conditions />
+              </Action>
             </Actions>
-            <Condition Enabled="false" Grouping="Or" />
+            <Condition Enabled="true" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Name="螺旋气流" Id="c25169a9-0e61-47a4-8547-5bd6714a9fcd" RegularExpression="00:282b:(.*)正在发动“螺旋气流”">
+          <Trigger Enabled="true" Name="螺旋气流" Id="c25169a9-0e61-47a4-8547-5bd6714a9fcd" RegularExpression="] 14:566:">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="穿背穿背" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -121,6 +129,64 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="大气爆发" Id="8a212d53-a34e-4cc2-9282-7bfccb57c970" RegularExpression="] 14:612:(迦楼罗|Garuda|ガルーダ) starts using (大气爆发|Aerial Blast|エリアルブラスト)">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="AOE" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="柔羽" Id="90a36249-85aa-41fc-b6a6-38d1f060971d" RegularExpression=":Added new combatant 柔羽.  Job: N/A Level: 50 Max HP: 8389 Max MP: 0 ">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="集火柔羽" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 集火柔羽 &lt;se.1&gt;" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="刺羽" Id="36e16f04-b89c-4bab-81c0-e65cde24eb4b" RegularExpression=":Added new combatant (刺羽|spiny plume|スパイニープルーム).  Job: N/A Level: 50 Max HP: 2000 Max MP: 0">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="ST嘲讽刺羽远离" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 谁打谁是内鬼&lt;se.1&gt;" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="高气压保护罩" Id="1f4188bb-baeb-44fa-b8ee-3af81abd4b09" RegularExpression="] 19:(刺羽|spiny plume|スパイニープルーム) was defeated by">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="进罩子" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="低气压换T" Id="c15450f0-4aed-40be-ba5e-892c91398b66" RegularExpression="] 1A:.{8}:[\w\u4E00-\u9FA5\uF900-\uFA2D ]+ gains the effect of (低气压|Thermal Low|低気圧) from">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="2层换T" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
@@ -152,11 +218,9 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="双奶热风" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 热风出人群" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -175,11 +239,9 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="热风出人群" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 热风点我" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="Or">
@@ -195,15 +257,12 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="石牢转火" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" UseTTSTextExpression="注意停手" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="5000">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 转火石牢 注意停手" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -233,11 +292,9 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="小怪快转火" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 波齿鱼人出现 快转火 &lt;se.1&gt;" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -275,11 +332,9 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="1点集合" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:${var:Set_Catfish_postman_port}/command" JsonPayloadExpression="/p 魅惑电我 " TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="GenericJson">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="Or">
