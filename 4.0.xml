@@ -174,7 +174,29 @@
         </Triggers>
       </Folder>
       <Folder ZoneFilterEnabled="True" Id="fb86471e-222d-4070-a4a0-6eb2a107c789" ZoneFilterRegularExpression="神龙梦幻歼灭战" Name="极神龙" Enabled="true">
-        <Folders />
+        <Folders>
+          <Folder Id="7523c459-d361-433e-af64-5542b5a3c057" Name="冰柱" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Name="冰柱右" Id="a105d2fc-08ae-44d4-8a32-44afe63cc566" RegularExpression="Icicle:25EF.*?-25">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="去右面右面右面" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True">
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Name="冰柱左" Id="e01c58c0-cdb6-4086-aed5-77210380863f" RegularExpression="Icicle:25EF.*?-15">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="去左面左面左面" TextAuraFontSize="0" ActionType="UseTTS" RefireInterrupt="True">
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Conditions />
+              </Trigger>
+            </Triggers>
+          </Folder>
+        </Folders>
         <Triggers>
           <Trigger Enabled="true" Name="P1闪电" Id="4eba4901-8ecb-4efd-9b29-d56c8ff6908d" RegularExpression="14:25EA:(.*) starts using 闪电 on (.*)">
             <Actions>
@@ -422,19 +444,15 @@
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${var:black}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="black" VariableExpression="${var:black} + 1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="white" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="??" ActionType="Variable" ExecutionDelayExpression="1">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="{ver:black}" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable" ExecutionDelayExpression="15000">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="Or">
@@ -447,19 +465,15 @@
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${var:white}" ExpressionTypeL="Numeric" ExpressionR="3" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="white" VariableExpression="${var:white} + 1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="black" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="??" ActionType="Variable" ExecutionDelayExpression="1">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="{ver:white}" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="Variable" ExecutionDelayExpression="15000">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="Or">
