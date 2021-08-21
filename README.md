@@ -5,5 +5,6 @@ FinalFantasyXIV old boss raid by Triggemometry
 
 所有触发器请使用ACT的 Triggemometry 执行载入
 
-目前仅测试阶段 部分极神未加入名单 请等待后续维护
+工作原因 暂时挂起到11.1.2021
+如有任何问题 清提交Issues 或等待后续维护
 
